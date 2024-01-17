@@ -1,12 +1,16 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  padding: 6rem;
+  padding: 2rem;
   min-height: 100vh;
+  justify-content: center;
 }
 
+.container {
+  max-width: 800px;
+}
 .description {
   display: inherit;
   justify-content: inherit;
@@ -97,7 +101,7 @@
 
 .center::before,
 .center::after {
-  content: '';
+  content: "";
   left: 50%;
   position: absolute;
   filter: blur(45px);
@@ -107,6 +111,7 @@
 .logo {
   position: relative;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -225,5 +230,64 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+.verticalMar {
+  margin: 25px 0;
+}
+.verticalMar2 {
+  margin: 40px 0;
+}
+.mainnav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.mainnav ul li {
+  margin: 25px 25px;
+  font-weight: bold;
+  list-style: none;
+  font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
+}
+.mainnav ul Link li {
+  text-decoration: none;
+}
+
+.myImg {
+  margin: 22px;
+  border-radius: 76px;
+  margin: 17px;
+  height: 150px;
+  width: 150px;
+}
+
+.underline {
+  text-decoration: none;
+}
+.title {
+  font-size: 1.3rem;
+}
+.h1 {
+  font-size: 30px;
+}
+.h2 {
+  font-size: 21px;
+}
+.btn {
+  color: white;
+  background: black;
+  padding: 7px 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  font-size: 11px;
+}
+
+@media only screen and (max-width: 600px) {
+  .mainnav ul li {
+    margin: 25px 6px;
+    font-weight: bold;
+    list-style: none;
+    font-family: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
   }
 }
